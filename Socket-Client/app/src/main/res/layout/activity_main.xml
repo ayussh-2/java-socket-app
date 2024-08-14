@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/chatWindow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/inputMessage"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="vertical"
+        android:text="Chat messages will appear here..."
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/inputMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/sendButton"
+        android:layout_toLeftOf="@id/sendButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:hint="Type a message..." />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Send" />
+</RelativeLayout>
